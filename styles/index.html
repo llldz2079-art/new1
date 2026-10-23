@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карандаш — магазин канцелярских товаров</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M12 33 30 9 38 15 20 39 10 41Z" fill="#e7b85b"/>
+                    <path d="M30 9 34 4 42 10 38 15Z" fill="#e9a4a8"/>
+                    <path d="M10 41 12 33 20 39Z" fill="#c38b58"/>
+                    <path d="M15 32 33 8" stroke="#fff4ce" stroke-width="3"/>
+                </svg>
+                <span>Карандаш<span class="logo-dot">.</span></span>
+            </a>
+
+            <nav class="navigation">
+                <a href="#home">Главная</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#popular">Популярное</a>
+                <a href="#about">О магазине</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#search" class="header-icon" aria-label="Поиск">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.5" cy="10.5" r="6.5"/>
+                        <path d="m16 16 5 5"/>
+                    </svg>
+                </a>
+                <a href="#popular" class="header-icon" aria-label="Избранное">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/>
+                    </svg>
+                </a>
+                <a href="#catalog" class="cart-button">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/>
+                        <circle cx="10" cy="20" r="1.3"/>
+                        <circle cx="18" cy="20" r="1.3"/>
+                    </svg>
+                    <span>Покупки</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный экран -->
+        <section class="hero" id="home">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <span class="eyebrow">ВСЁ ДЛЯ УЧЁБЫ И ТВОРЧЕСТВА</span>
+                    <h1>Вдохновение<br>начинается <span>здесь</span></h1>
+                    <p>
+                        Канцелярские товары для учёбы, работы и творчества.
+                        Записывай мечты, собирай идеи и создавай новое вместе с нами!
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#catalog" class="button button-primary">Перейти в каталог →</a>
+                        <a href="#about" class="button button-light">О магазине</a>
+                    </div>
+
+                    <div class="hero-benefits">
+                        <div><strong>500+</strong><span>товаров</span></div>
+                        <div><strong>100%</strong><span>для вдохновения</span></div>
+                        <div><strong>5 ★</strong><span>забота о клиентах</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-picture">
+                    <div class="hero-circle"></div>
+                    <div class="picture-card">
+                        <svg class="hero-art" viewBox="0 0 320 220" role="img" aria-label="Рисунки тетради, карандаша и кисти">
+                            <!-- Тетрадь -->
+                            <g transform="rotate(-9 95 110)">
+                                <rect x="26" y="40" width="100" height="143" rx="8" fill="#b6d7b6"/>
+                                <rect x="34" y="34" width="94" height="143" rx="8" fill="#4c8c68"/>
+                                <rect x="45" y="46" width="72" height="117" rx="4" fill="#f8faef"/>
+                                <path d="M56 68h50M56 81h50M56 94h50M56 107h40M56 120h45" stroke="#b5cfb4" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="39" cy="57" r="2.5" fill="#fff"/>
+                                <circle cx="39" cy="77" r="2.5" fill="#fff"/>
+                                <circle cx="39" cy="97" r="2.5" fill="#fff"/>
+                                <circle cx="39" cy="117" r="2.5" fill="#fff"/>
+                                <circle cx="39" cy="137" r="2.5" fill="#fff"/>
+                            </g>
+                            <!-- Карандаш -->
+                            <g transform="rotate(27 190 105)">
+                                <rect x="170" y="30" width="22" height="130" rx="4" fill="#edc35e"/>
+                                <rect x="170" y="30" width="22" height="17" rx="3" fill="#e99ba4"/>
+                                <path d="M170 148 181 174 192 148Z" fill="#d9b184"/>
+                                <path d="M178 163 181 174 184 163Z" fill="#4b4035"/>
+                                <path d="M175 51v90" stroke="#fff0b9" stroke-width="3"/>
+                            </g>
+                            <!-- Линейка -->
+                            <g transform="rotate(14 246 133)">
+                                <rect x="220" y="67" width="35" height="120" rx="4" fill="#e7a4a8"/>
+                                <path d="M225 80h12M225 92h8M225 104h12M225 116h8M225 128h12M225 140h8M225 152h12M225 164h8" stroke="#fff" stroke-width="2"/>
+                            </g>
+                            <circle cx="265" cy="38" r="6" fill="#e9c45d"/>
+                            <path d="m220 26 4 9 9 4-9 4-4 9-4-9-9-4 9-4Z" fill="#77a889"/>
+                        </svg>
+                        <span class="picture-caption">Твори каждый день!</span>
+                    </div>
+                    <div class="floating-note note-one">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/>
+                        </svg>
+                        Новинки
+                    </div>
+                    <div class="floating-note note-two">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/>
+                        </svg>
+                        С любовью к деталям
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества магазина -->
+        <section class="benefit-strip">
+            <div class="container benefit-strip-inner">
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 5h12v12H2zM14 9h5l3 4v4h-8z"/>
+                        <circle cx="6" cy="19" r="2"/>
+                        <circle cx="18" cy="19" r="2"/>
+                    </svg>
+                    <span>Удобная доставка</span>
+                </div>
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/>
+                    </svg>
+                    <span>Товары на каждый день</span>
+                </div>
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/>
+                    </svg>
+                    <span>Забота о покупателях</span>
+                </div>
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/>
+                        <circle cx="19" cy="4" r="1"/>
+                    </svg>
+                    <span>Для творчества и идей</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Поиск -->
+        <section class="search-section" id="search">
+            <div class="container">
+                <div class="search-box">
+                    <div>
+                        <h2>Что будем искать?</h2>
+                        <p>Найди товары для своих идей</p>
+                    </div>
+                    <form class="search-form" action="#catalog" method="get">
+                        <label class="visually-hidden" for="search-input">Поиск товаров</label>
+                        <input id="search-input" type="search" name="q" placeholder="Например, тетради или ручки...">
+                        <button type="submit" class="button button-primary">Найти товар</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Категории товаров -->
+        <section class="section categories-section" id="categories">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">ВЫБИРАЙ СВОЁ</span>
+                        <h2>Категории товаров</h2>
+                        <p>Всё необходимое собрано в одном месте</p>
+                    </div>
+                    <a href="#catalog" class="text-link">Все товары →</a>
+                </div>
+
+                <div class="category-grid">
+                    <a href="#notebooks" class="category-card category-green">
+                        <svg class="category-art" viewBox="0 0 100 100" role="img" aria-label="Тетрадь">
+                            <g transform="rotate(-8 50 50)">
+                                <rect x="20" y="12" width="62" height="78" rx="7" fill="#4c8c68"/>
+                                <rect x="29" y="20" width="44" height="62" rx="3" fill="#f8faef"/>
+                                <path d="M37 34h28M37 44h28M37 54h28M37 64h20" stroke="#b5cfb4" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M20 25h9M20 37h9M20 49h9M20 61h9M20 73h9" stroke="#d6ead5" stroke-width="3"/>
+                            </g>
+                        </svg>
+                        <span class="category-name">Тетради и блокноты</span>
+                        <span class="category-link">Смотреть товары →</span>
+                    </a>
+
+                    <a href="#pens" class="category-card category-yellow">
+                        <svg class="category-art" viewBox="0 0 100 100" role="img" aria-label="Ручки и карандаши">
+                            <g transform="rotate(22 38 50)">
+                                <rect x="25" y="13" width="15" height="69" rx="4" fill="#e8b84f"/>
+                                <path d="M25 76 32.5 92 40 76Z" fill="#c4935e"/>
+                                <path d="M31 84 32.5 92 34 84Z" fill="#40382f"/>
+                                <rect x="25" y="13" width="15" height="11" rx="3" fill="#e59ca3"/>
+                            </g>
+                            <g transform="rotate(-13 65 50)">
+                                <rect x="57" y="17" width="15" height="64" rx="5" fill="#5488c5"/>
+                                <rect x="57" y="17" width="15" height="13" rx="3" fill="#c6d9f2"/>
+                                <path d="M57 76 64.5 92 72 76Z" fill="#e6c28e"/>
+                            </g>
+                        </svg>
+                        <span class="category-name">Ручки и карандаши</span>
+                        <span class="category-link">Смотреть товары →</span>
+                    </a>
+
+                    <a href="#art" class="category-card category-pink">
+                        <svg class="category-art" viewBox="0 0 100 100" role="img" aria-label="Цветные карандаши">
+                            <g transform="rotate(-20 50 50)">
+                                <path d="M22 23h12v53H22z" fill="#df8d98"/>
+                                <path d="M22 76h12L28 91Z" fill="#d4aa78"/>
+                                <path d="M40 15h12v61H40z" fill="#e9c45d"/>
+                                <path d="M40 76h12L46 91Z" fill="#d4aa78"/>
+                                <path d="M58 26h12v50H58z" fill="#6898ce"/>
+                                <path d="M58 76h12L64 91Z" fill="#d4aa78"/>
+                                <path d="M26 29v39M44 22v47M62 33v34" stroke="#fff" stroke-width="2.5" opacity=".7"/>
+                            </g>
+                        </svg>
+                        <span class="category-name">Для творчества</span>
+                        <span class="category-link">Смотреть товары →</span>
+                    </a>
+
+                    <a href="#office" class="category-card category-blue">
+                        <svg class="category-art" viewBox="0 0 100 100" role="img" aria-label="Скрепки и офисные принадлежности">
+                            <path d="M35 25v42a12 12 0 0 0 24 0V30a8 8 0 0 0-16 0v36a4 4 0 0 0 8 0V36" fill="none" stroke="#6d94bd" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M62 20v43a12 12 0 0 0 24 0V25a8 8 0 0 0-16 0v36a4 4 0 0 0 8 0V31" fill="none" stroke="#d98c9b" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="category-name">Офисные товары</span>
+                        <span class="category-link">Смотреть товары →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные товары -->
+        <section class="section products-section" id="popular">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">ВЫБОР ПОКУПАТЕЛЕЙ</span>
+                        <h2>Популярные товары</h2>
+                        <p>Практичные вещи для учёбы, работы и творчества</p>
+                    </div>
+                    <a href="#catalog" class="text-link">Весь каталог →</a>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Тетрадь -->
+                    <article class="product-card" id="notebooks">
+                        <div class="product-image product-image-green">
+                            <span class="product-label">Хит</span>
+                            <button class="favorite-button" type="button" aria-label="Добавить тетрадь в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Зелёная тетрадь">
+                                <g transform="rotate(-8 80 80)">
+                                    <rect x="39" y="23" width="86" height="116" rx="8" fill="#b5d6b5"/>
+                                    <rect x="45" y="19" width="81" height="116" rx="7" fill="#4c8c68"/>
+                                    <rect x="54" y="29" width="64" height="96" rx="4" fill="#f7faf0"/>
+                                    <path d="M64 48h43M64 61h43M64 74h43M64 87h35" stroke="#b4cdb6" stroke-width="3" stroke-linecap="round"/>
+                                    <circle cx="48" cy="39" r="2.5" fill="#f7faf0"/>
+                                    <circle cx="48" cy="56" r="2.5" fill="#f7faf0"/>
+                                    <circle cx="48" cy="73" r="2.5" fill="#f7faf0"/>
+                                    <circle cx="48" cy="90" r="2.5" fill="#f7faf0"/>
+                                    <circle cx="48" cy="107" r="2.5" fill="#f7faf0"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Тетради</span>
+                            <h3>Тетрадь в клетку</h3>
+                            <p class="product-description">48 листов, удобный формат</p>
+                            <div class="product-bottom"><strong class="price">59 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <!-- Цветные ручки -->
+                    <article class="product-card" id="pens">
+                        <div class="product-image product-image-yellow">
+                            <span class="product-label label-new">Новинка</span>
+                            <button class="favorite-button" type="button" aria-label="Добавить ручки в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Набор цветных ручек">
+                                <g transform="rotate(15 80 80)">
+                                    <g>
+                                        <rect x="34" y="25" width="17" height="100" rx="5" fill="#e6b84f"/>
+                                        <rect x="34" y="25" width="17" height="16" rx="4" fill="#f7d97e"/>
+                                        <path d="M34 119 42.5 139 51 119Z" fill="#c49b69"/>
+                                        <path d="M41 130 42.5 139 44 130Z" fill="#45403b"/>
+                                        <path d="M39 48v60" stroke="#fff0b7" stroke-width="3"/>
+                                    </g>
+                                    <g transform="translate(25 -8) rotate(-8 65 75)">
+                                        <rect x="54" y="32" width="17" height="100" rx="5" fill="#6c9dca"/>
+                                        <rect x="54" y="32" width="17" height="16" rx="4" fill="#b8d5ed"/>
+                                        <path d="M54 126 62.5 146 71 126Z" fill="#c49b69"/>
+                                        <path d="M61 137 62.5 146 64 137Z" fill="#45403b"/>
+                                    </g>
+                                    <g transform="translate(50 4) rotate(-14 85 75)">
+                                        <rect x="75" y="20" width="17" height="100" rx="5" fill="#d98796"/>
+                                        <rect x="75" y="20" width="17" height="16" rx="4" fill="#f1bac3"/>
+                                        <path d="M75 114 83.5 134 92 114Z" fill="#c49b69"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Письменные принадлежности</span>
+                            <h3>Набор цветных ручек</h3>
+                            <p class="product-description">6 ярких цветов для заметок</p>
+                            <div class="product-bottom"><strong class="price">149 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <!-- Цветные карандаши -->
+                    <article class="product-card" id="art">
+                        <div class="product-image product-image-pink">
+                            <span class="product-label">Популярное</span>
+                            <button class="favorite-button" type="button" aria-label="Добавить карандаши в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Цветные карандаши">
+                                <g transform="rotate(-15 80 80)">
+                                    <g>
+                                        <path d="M34 27h19v92H34z" fill="#d98492"/>
+                                        <path d="M34 119h19l-9.5 24Z" fill="#d4ae7c"/>
+                                        <path d="m41 136 2.5 7 2.5-7Z" fill="#423a32"/>
+                                        <path d="M38 35v75" stroke="#f8cbd0" stroke-width="3"/>
+                                    </g>
+                                    <g>
+                                        <path d="M61 17h19v102H61z" fill="#e5bb4e"/>
+                                        <path d="M61 119h19l-9.5 24Z" fill="#d4ae7c"/>
+                                        <path d="m68 136 2.5 7 2.5-7Z" fill="#423a32"/>
+                                        <path d="M65 26v84" stroke="#f9e2a0" stroke-width="3"/>
+                                    </g>
+                                    <g>
+                                        <path d="M88 31h19v88H88z" fill="#6695c9"/>
+                                        <path d="M88 119h19l-9.5 24Z" fill="#d4ae7c"/>
+                                        <path d="m95 136 2.5 7 2.5-7Z" fill="#423a32"/>
+                                        <path d="M92 39v71" stroke="#bdd7ef" stroke-width="3"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Творчество</span>
+                            <h3>Цветные карандаши</h3>
+                            <p class="product-description">Набор из 12 цветов</p>
+                            <div class="product-bottom"><strong class="price">189 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <!-- Скрепки -->
+                    <article class="product-card" id="office">
+                        <div class="product-image product-image-blue">
+                            <span class="product-label label-sale">Выгодно</span>
+                            <button class="favorite-button" type="button" aria-label="Добавить скрепки в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Металлические скрепки">
+                                <g fill="none" stroke-width="7" stroke-linecap="round">
+                                    <path d="M47 45v58a19 19 0 0 0 38 0V48a13 13 0 0 0-26 0v50a6 6 0 0 0 12 0V58" stroke="#6794c5"/>
+                                    <path d="M86 32v60a19 19 0 0 0 38 0V36a13 13 0 0 0-26 0v50a6 6 0 0 0 12 0V46" stroke="#d58b9a"/>
+                                </g>
+                                <circle cx="40" cy="31" r="5" fill="#e9c45d"/>
+                                <circle cx="126" cy="120" r="6" fill="#6d9f7d"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Для офиса</span>
+                            <h3>Набор скрепок</h3>
+                            <p class="product-description">Металлические, 50 штук</p>
+                            <div class="product-bottom"><strong class="price">79 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="center-button">
+                    <a href="#catalog" class="button button-outline">Посмотреть все товары →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дополнительный каталог -->
+        <section class="section catalog-section" id="catalog">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">НА КАЖДЫЙ ДЕНЬ</span>
+                        <h2>Ещё больше полезного</h2>
+                        <p>Выбирай товары для своих задач</p>
+                    </div>
+                </div>
+
+                <div class="catalog-buttons">
+                    <a href="#notebooks" class="filter-button">Все товары</a>
+                    <a href="#notebooks" class="filter-button">Тетради</a>
+                    <a href="#pens" class="filter-button">Ручки</a>
+                    <a href="#art" class="filter-button">Творчество</a>
+                    <a href="#office" class="filter-button">Офис</a>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Блокнот -->
+                    <article class="product-card">
+                        <div class="product-image product-image-purple">
+                            <button class="favorite-button" type="button" aria-label="Добавить блокнот в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Блокнот для заметок">
+                                <g transform="rotate(7 80 80)">
+                                    <rect x="34" y="20" width="94" height="122" rx="8" fill="#9d87bd"/>
+                                    <rect x="43" y="28" width="78" height="106" rx="4" fill="#fffaf4"/>
+                                    <path d="M55 46h53M55 59h53M55 72h53M55 85h42M55 98h48" stroke="#d7cce7" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M34 42h9M34 58h9M34 74h9M34 90h9M34 106h9M34 122h9" stroke="#e7dff2" stroke-width="3"/>
+                                    <path d="m83 107 6-12 6 12-6-3Z" fill="#e7bd57"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Блокноты</span>
+                            <h3>Блокнот для заметок</h3>
+                            <p class="product-description">Компактный, 80 листов</p>
+                            <div class="product-bottom"><strong class="price">129 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <!-- Простые карандаши -->
+                    <article class="product-card">
+                        <div class="product-image product-image-orange">
+                            <button class="favorite-button" type="button" aria-label="Добавить карандаши в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Простые карандаши">
+                                <g transform="rotate(22 80 80)">
+                                    <g>
+                                        <rect x="43" y="20" width="22" height="105" rx="4" fill="#e7b94f"/>
+                                        <rect x="43" y="20" width="22" height="17" rx="3" fill="#df8e97"/>
+                                        <path d="M43 121 54 146 65 121Z" fill="#d5ad7b"/>
+                                        <path d="M51 138 54 146 57 138Z" fill="#494039"/>
+                                        <path d="M49 42v69" stroke="#fff0b8" stroke-width="3"/>
+                                    </g>
+                                    <g transform="translate(31 -10) rotate(-10 80 80)">
+                                        <rect x="72" y="20" width="22" height="105" rx="4" fill="#6795c7"/>
+                                        <rect x="72" y="20" width="22" height="17" rx="3" fill="#b8d4ee"/>
+                                        <path d="M72 121 83 146 94 121Z" fill="#d5ad7b"/>
+                                        <path d="M80 138 83 146 86 138Z" fill="#494039"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Карандаши</span>
+                            <h3>Простые карандаши</h3>
+                            <p class="product-description">Набор из 5 штук</p>
+                            <div class="product-bottom"><strong class="price">69 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <!-- Набор для черчения -->
+                    <article class="product-card">
+                        <div class="product-image product-image-blue">
+                            <button class="favorite-button" type="button" aria-label="Добавить набор в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Линейка, угольник и транспортир">
+                                <rect x="23" y="42" width="112" height="28" rx="4" fill="#e5c45f" transform="rotate(-12 80 56)"/>
+                                <path d="M36 45v10M49 42v7M62 39v10M75 36v7M88 33v10M101 30v7M114 27v10" stroke="#fff8d9" stroke-width="2" transform="rotate(-12 80 56)"/>
+                                <path d="M39 119 39 75 92 119Z" fill="#83b5d0" stroke="#5d91b3" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M49 108V92L69 108Z" fill="#e5f1f7"/>
+                                <path d="M76 121 A39 39 0 0 1 124 73 L124 121Z" fill="#dca0aa" stroke="#c87c8b" stroke-width="3"/>
+                                <path d="M89 121 A24 24 0 0 1 124 86" fill="none" stroke="#fff1f2" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Школьные товары</span>
+                            <h3>Набор для черчения</h3>
+                            <p class="product-description">Линейка, угольник и транспортир</p>
+                            <div class="product-bottom"><strong class="price">119 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <!-- Папка -->
+                    <article class="product-card">
+                        <div class="product-image product-image-green">
+                            <button class="favorite-button" type="button" aria-label="Добавить папку в избранное">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 5-8.5 10-8.5 10s-8.5-5-8.5-10A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 8.5 2.3Z"/></svg>
+                            </button>
+                            <svg class="product-drawing" viewBox="0 0 160 160" role="img" aria-label="Папка для документов">
+                                <path d="M23 43a8 8 0 0 1 8-8h35l13 14h48a8 8 0 0 1 8 8v57a8 8 0 0 1-8 8H31a8 8 0 0 1-8-8Z" fill="#b4d6b6"/>
+                                <path d="M23 60a8 8 0 0 1 8-8h96a8 8 0 0 1 8 8v54a8 8 0 0 1-8 8H31a8 8 0 0 1-8-8Z" fill="#4f8e69"/>
+                                <rect x="43" y="68" width="72" height="35" rx="5" fill="#f8faef"/>
+                                <path d="M55 80h48M55 89h36" stroke="#b4cdb6" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="111" cy="110" r="5" fill="#e6c45d"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Организация</span>
+                            <h3>Папка для документов</h3>
+                            <p class="product-description">Для учёбы и работы</p>
+                            <div class="product-bottom"><strong class="price">99 ₽</strong><button class="add-button" type="button" aria-label="Добавить в корзину">+</button></div>
+                            <a href="#contacts" class="details-link">Подробнее →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Рекламный блок -->
+        <section class="promo-section">
+            <div class="container">
+                <div class="promo-card">
+                    <div class="promo-content">
+                        <span class="eyebrow">ВРЕМЯ ДЛЯ НОВЫХ ИДЕЙ</span>
+                        <h2>Создавай свой<br>собственный мир!</h2>
+                        <p>Подбирай любимые цвета, записывай планы и превращай обычные дни в яркие.</p>
+                        <a href="#catalog" class="button button-white">Выбрать товары →</a>
+                    </div>
+                    <svg class="promo-drawing" viewBox="0 0 260 220" role="img" aria-label="Карандаши, тетрадь и палитра">
+                        <g transform="rotate(-12 70 100)">
+                            <rect x="40" y="27" width="23" height="128" rx="5" fill="#e8c15b"/>
+                            <rect x="40" y="27" width="23" height="17" rx="4" fill="#e4a0a8"/>
+                            <path d="M40 151 51.5 179 63 151Z" fill="#d3aa78"/>
+                            <path d="M48 169 51.5 179 55 169Z" fill="#473d34"/>
+                        </g>
+                        <g transform="rotate(12 105 100)">
+                            <rect x="81" y="37" width="23" height="128" rx="5" fill="#83b5d0"/>
+                            <rect x="81" y="37" width="23" height="17" rx="4" fill="#d6e8f1"/>
+                            <path d="M81 161 92.5 189 104 161Z" fill="#d3aa78"/>
+                        </g>
+                        <g transform="rotate(7 164 110)">
+                            <rect x="126" y="59" width="88" height="110" rx="7" fill="#f8f7ed"/>
+                            <rect x="126" y="59" width="88" height="22" rx="7" fill="#d98f9d"/>
+                            <path d="M140 99h59M140 112h59M140 125h45M140 138h53" stroke="#d5d8c8" stroke-width="3" stroke-linecap="round"/>
+                        </g>
+                        <circle cx="202" cy="35" r="12" fill="#e8c15b"/>
+                        <path d="m202 15 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#f8f7ed"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- О магазине -->
+        <section class="section about-section" id="about">
+            <div class="container about-inner">
+                <div class="about-illustration">
+                    <svg class="about-drawing" viewBox="0 0 300 280" role="img" aria-label="Стопка книг и карандаши">
+                        <ellipse cx="150" cy="235" rx="105" ry="13" fill="#dce8d6"/>
+                        <g transform="rotate(-5 145 190)">
+                            <rect x="57" y="180" width="180" height="34" rx="5" fill="#e6bc58"/>
+                            <rect x="57" y="180" width="180" height="7" rx="3" fill="#f4d982"/>
+                            <rect x="72" y="145" width="166" height="35" rx="5" fill="#d98796"/>
+                            <rect x="72" y="145" width="166" height="7" rx="3" fill="#f1b9c1"/>
+                            <rect x="48" y="111" width="188" height="34" rx="5" fill="#6896c7"/>
+                            <rect x="48" y="111" width="188" height="7" rx="3" fill="#a9c7e8"/>
+                        </g>
+                        <g transform="rotate(15 110 80)">
+                            <rect x="92" y="23" width="18" height="102" rx="4" fill="#4e8d69"/>
+                            <rect x="92" y="23" width="18" height="15" rx="4" fill="#b6d6b6"/>
+                            <path d="M92 121 101 143 110 121Z" fill="#d3aa78"/>
+                            <path d="M98 134 101 143 104 134Z" fill="#463d34"/>
+                        </g>
+                        <g transform="rotate(-10 151 80)">
+                            <rect x="139" y="15" width="18" height="110" rx="4" fill="#e6bc58"/>
+                            <rect x="139" y="15" width="18" height="15" rx="4" fill="#e5a0a8"/>
+                            <path d="M139 121 148 143 157 121Z" fill="#d3aa78"/>
+                        </g>
+                        <circle cx="220" cy="63" r="13" fill="#e6bc58"/>
+                        <path d="m220 41 4 12 12 4-12 4-4 12-4-12-12-4 12-4Z" fill="#d98796"/>
+                    </svg>
+                    <span class="about-sticker sticker-top">Учись!</span>
+                    <span class="about-sticker sticker-bottom">Мечтай!</span>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">НЕ ПРОСТО КАНЦЕЛЯРИЯ</span>
+                    <h2>Маленькие вещи для больших идей</h2>
+                    <p>
+                        «Карандаш» — магазин канцелярских товаров для школьников,
+                        студентов, творческих людей и всех, кто любит порядок.
+                    </p>
+                    <p>
+                        Мы собрали полезные принадлежности, которые помогают
+                        учиться, работать, планировать дела и воплощать идеи.
+                    </p>
+
+                    <div class="about-features">
+                        <div><span>✓</span> Товары для учёбы</div>
+                        <div><span>✓</span> Принадлежности для творчества</div>
+                        <div><span>✓</span> Всё для рабочего стола</div>
+                    </div>
+                    <a href="#catalog" class="button button-primary">Изучить каталог →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="section advantages-section">
+            <div class="container">
+                <div class="section-heading heading-center">
+                    <div>
+                        <span class="eyebrow">ПОЧЕМУ МЫ</span>
+                        <h2>Покупать у нас удобно</h2>
+                        <p>Мы заботимся о том, чтобы выбор был простым</p>
+                    </div>
+                </div>
+
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h12v12H2zM14 9h5l3 4v4h-8z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>
+                        </div>
+                        <h3>Большой выбор</h3>
+                        <p>Товары для школы, офиса и творческих занятий.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg>
+                        </div>
+                        <h3>Продуманный ассортимент</h3>
+                        <p>Полезные вещи для повседневных задач.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zM7 8h10M7 12h10M7 16h6"/></svg>
+                        </div>
+                        <h3>Удобный каталог</h3>
+                        <p>Понятные категории помогают найти нужные товары.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/></svg>
+                        </div>
+                        <h3>Вдохновение каждый день</h3>
+                        <p>Красивые принадлежности для новых идей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section contacts-section" id="contacts">
+            <div class="container">
+                <div class="contacts-card">
+                    <div class="contacts-content">
+                        <span class="eyebrow">МЫ НА СВЯЗИ</span>
+                        <h2>Остались вопросы?</h2>
+                        <p>Напиши нам или посмотри каталог. Будем рады помочь с выбором!</p>
+                        <a href="mailto:hello@karandash.example" class="button button-primary">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+                            Написать нам
+                        </a>
+                    </div>
+
+                    <div class="contacts-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+                            </span>
+                            <div>
+                                <span class="contact-label">Электронная почта</span>
+                                <a href="mailto:hello@karandash.example">hello@karandash.example</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>
+                            </span>
+                            <div>
+                                <span class="contact-label">Время работы</span>
+                                <strong>Пн–Пт: 9:00–18:00</strong>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            </span>
+                            <div>
+                                <span class="contact-label">Наш магазин</span>
+                                <strong>Магазин канцелярских товаров «Карандаш»</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo footer-logo">
+                <svg class="logo-icon" viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M12 33 30 9 38 15 20 39 10 41Z" fill="#e7b85b"/>
+                    <path d="M30 9 34 4 42 10 38 15Z" fill="#e9a4a8"/>
+                    <path d="M10 41 12 33 20 39Z" fill="#c38b58"/>
+                    <path d="M15 32 33 8" stroke="#fff4ce" stroke-width="3"/>
+                </svg>
+                <span>Карандаш<span class="logo-dot">.</span></span>
+            </a>
+            <p>Всё для учёбы, работы и творчества.</p>
+            <div class="footer-links">
+                <a href="#catalog">Каталог</a>
+                <a href="#about">О магазине</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <span class="copyright">© 2026 Карандаш. Учебный проект.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
